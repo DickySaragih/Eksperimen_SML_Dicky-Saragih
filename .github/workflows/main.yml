@@ -29,7 +29,7 @@ jobs:
         python preprocessing/automate_dicky_saragih.py
 
     - name: Upload preprocessed dataset
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4  # ← versi terbaru
       with:
         name: preprocessed-data
         path: preprocessing/WineQT_processed.csv
